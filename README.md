@@ -2,6 +2,8 @@
 
 Monorepo layout: Android app (`app/`), PHP API (`backend/`), MySQL dump (`database/`).
 
+
+This Project is For Our Lady of Fatima University ITEL Andriod Mobile Development such i am student Willing to Give commit to other student to use this or other enterpernuer  can use as based line willing to help
 ---
 
 ## Project structure
@@ -160,6 +162,7 @@ To change passwords, generate a new hash in PHP: `password_hash('YourPass', PASS
 | Images   | Glide 5.x |
 | Backend  | PHP 8+, PDO, MySQL 8 / MariaDB 10.5+ |
 | Auth     | Bearer token (SHA-256), stored server-side with expiry |
+| Windows Server| Dont use xampp i like i did use mariadb or postgre SQL for production method |
 
 ---
 
