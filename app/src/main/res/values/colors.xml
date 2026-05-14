@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors (from Stitch AI MD3 theme) -->
+    <color name="primary">#FF4F378A</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="primary_container">#FF6750A4</color>
+    <color name="on_primary_container">#FFE0D2FF</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#FF63597C</color>
+    <color name="on_secondary">#FFFFFFFF</color>
+    <color name="secondary_container">#FFE1D4FD</color>
+    <color name="on_secondary_container">#FF645A7D</color>
+
+    <!-- Tertiary (Gold/Accent) -->
+    <color name="tertiary">#FF765B00</color>
+    <color name="on_tertiary">#FFFFFFFF</color>
+    <color name="tertiary_container">#FFC9A74D</color>
+    <color name="on_tertiary_container">#FF503D00</color>
+
+    <!-- Error -->
+    <color name="error">#FFBA1A1A</color>
+    <color name="on_error">#FFFFFFFF</color>
+    <color name="error_container">#FFFFDAD6</color>
+    <color name="on_error_container">#FF93000A</color>
+
+    <!-- Surface -->
+    <color name="surface">#FFFDF7FF</color>
+    <color name="on_surface">#FF1D1B20</color>
+    <color name="surface_variant">#FFE6E0E9</color>
+    <color name="on_surface_variant">#FF494551</color>
+    <color name="surface_container">#FFF2ECF4</color>
+    <color name="surface_container_low">#FFF8F2FA</color>
+    <color name="surface_container_high">#FFECE6EE</color>
+    <color name="surface_container_highest">#FFE6E0E9</color>
+    <color name="surface_container_lowest">#FFFFFFFF</color>
+
+    <!-- Other -->
+    <color name="background">#FFFDF7FF</color>
+    <color name="on_background">#FF1D1B20</color>
+    <color name="outline">#FF7A7582</color>
+    <color name="outline_variant">#FFCBC4D2</color>
+    <color name="inverse_surface">#FF322F35</color>
+    <color name="inverse_on_surface">#FFF5EFF7</color>
+    <color name="inverse_primary">#FFCFBCFF</color>
+
+    <!-- Checkout Orange (from Stitch checkout flow) -->
+    <color name="checkout_orange">#FFFF6600</color>
+
+    <!-- Star Rating -->
+    <color name="star_gold">#FFFFC107</color>
+
+    <!-- Status Colors -->
+    <color name="status_success">#FF4CAF50</color>
+    <color name="status_warning">#FFFF9800</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#99000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Admin dashboard -->
+    <color name="admin_gradient_start">#FF5E35B1</color>
+    <color name="admin_gradient_end">#FF3949AB</color>
+    <color name="admin_header_subtitle">#E8FFFFFF</color>
+    <color name="stat_accent_orders">#FF7E57C2</color>
+    <color name="stat_accent_sales">#FF26A69A</color>
+    <color name="stat_accent_products">#FF42A5F5</color>
+    <color name="stat_accent_customers">#FFFF7043</color>
+    <color name="admin_quick_orders_bg">#FFE8EAF6</color>
+    <color name="admin_quick_products_bg">#FFE0F2F1</color>
+    <color name="admin_quick_customers_bg">#FFFFF3E0</color>
+    <color name="admin_quick_reports_bg">#FFF3E5F5</color>
+    <color name="admin_surface_elevated">#FFFEFBFF</color>
+    <color name="badge_text_pending">#FFE65100</color>
+    <color name="badge_text_processing">#FF1565C0</color>
+    <color name="badge_text_completed">#FF2E7D32</color>
+    <color name="badge_text_cancelled">#FFB71C1C</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="admin_order_statuses">
+        <item>pending</item>
+        <item>processing</item>
+        <item>completed</item>
+        <item>cancelled</item>
+    </string-array>
+</resources>

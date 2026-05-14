@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="128dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/surface">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="128dp">
+            <ImageView android:id="@+id/iv_flash" android:layout_width="match_parent" android:layout_height="match_parent"
+                android:scaleType="centerCrop" android:contentDescription="Product" />
+            <TextView android:id="@+id/tv_flash_discount" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@color/tertiary" android:textColor="@color/on_tertiary"
+                android:paddingHorizontal="6dp" android:paddingVertical="2dp" android:textSize="10sp" />
+        </FrameLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="8dp">
+            <TextView android:id="@+id/tv_flash_price" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/primary" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tv_flash_sold" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" android:textColor="@color/on_surface_variant" android:textSize="8sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.flashshop.app'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId "com.flashshop.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+
+        // Reachable URL for emulator/device (replace host with YOUR_PUBLIC_IP when you deploy).
+        buildConfigField "String", "BASE_URL", "\"http://208.115.197.18/flashshop/api/\""
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            // For local testing with emulator
+            buildConfigField "String", "BASE_URL", "\"http://208.115.197.18/flashshop/api/\""
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        buildConfig true
+        viewBinding true
+    }
+}
+
+dependencies {
+    // AndroidX Core
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.core:core:1.18.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.2.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
+
+    // Material Design
+    implementation 'com.google.android.material:material:1.13.0'
+
+    // Retrofit + Gson
+    implementation 'com.squareup.retrofit2:retrofit:3.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:3.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.3.2'
+
+    // Glide (Image Loading)
+    implementation 'com.github.bumptech.glide:glide:5.0.7'
+    annotationProcessor 'com.github.bumptech.glide:compiler:5.0.7'
+
+    // CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

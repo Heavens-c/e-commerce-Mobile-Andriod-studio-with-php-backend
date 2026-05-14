@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_flash_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_flash_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlashShop"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FlashShop.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.LoginActivity" android:theme="@style/Theme.FlashShop.Auth" />
+        <activity android:name=".activities.RegisterActivity" android:theme="@style/Theme.FlashShop.Auth" />
+        <activity android:name=".activities.AdminDashboardActivity" android:theme="@style/Theme.FlashShop.Admin" />
+        <activity android:name=".activities.OrderListActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.ProductDetailActivity" />
+        <activity android:name=".activities.CartActivity" />
+        <activity android:name=".activities.CheckoutActivity" />
+        <activity android:name=".activities.OrderHistoryActivity" />
+        <activity android:name=".activities.SearchActivity" />
+        <activity android:name=".activities.ForgotPasswordActivity" android:theme="@style/Theme.FlashShop.Auth" />
+        <activity android:name=".activities.ResetPasswordActivity" android:theme="@style/Theme.FlashShop.Auth" />
+        <activity android:name=".activities.CategoryProductsActivity" />
+        <activity android:name=".activities.AdminProductListActivity" android:theme="@style/Theme.FlashShop.Admin" />
+        <activity android:name=".activities.AdminProductEditorActivity" android:theme="@style/Theme.FlashShop.Admin" />
+        <activity android:name=".activities.AdminReportsActivity" android:theme="@style/Theme.FlashShop.Admin" />
+
+    </application>
+</manifest>

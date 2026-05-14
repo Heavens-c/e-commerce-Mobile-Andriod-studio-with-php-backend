@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="32dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_flash_logo"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/create_account"
+            android:textColor="@color/on_surface"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/create_account_subtitle"
+            android:textColor="@color/on_surface_variant"
+            android:textSize="14sp" />
+
+        <!-- Form Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="1dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardBackgroundColor="@color/surface_container_lowest">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/full_name_label" android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+                <EditText android:id="@+id/et_name" android:layout_width="match_parent" android:layout_height="48dp"
+                    android:layout_marginTop="4dp" android:background="@drawable/bg_edittext"
+                    android:hint="@string/full_name_hint" android:inputType="textPersonName"
+                    android:paddingHorizontal="16dp" android:textSize="14sp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:text="@string/email_label"
+                    android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+                <EditText android:id="@+id/et_email" android:layout_width="match_parent" android:layout_height="48dp"
+                    android:layout_marginTop="4dp" android:background="@drawable/bg_edittext"
+                    android:hint="@string/email_hint" android:inputType="textEmailAddress"
+                    android:paddingHorizontal="16dp" android:textSize="14sp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:text="@string/password_label"
+                    android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+                <EditText android:id="@+id/et_password" android:layout_width="match_parent" android:layout_height="48dp"
+                    android:layout_marginTop="4dp" android:background="@drawable/bg_edittext"
+                    android:hint="••••••••" android:inputType="textPassword"
+                    android:paddingHorizontal="16dp" android:textSize="14sp" />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:text="@string/confirm_password_label"
+                    android:textColor="@color/on_surface_variant" android:textSize="12sp" />
+                <EditText android:id="@+id/et_confirm_password" android:layout_width="match_parent" android:layout_height="48dp"
+                    android:layout_marginTop="4dp" android:background="@drawable/bg_edittext"
+                    android:hint="••••••••" android:inputType="textPassword"
+                    android:paddingHorizontal="16dp" android:textSize="14sp" />
+
+                <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="center" android:layout_marginTop="8dp" android:visibility="gone"
+                    android:indeterminateTint="@color/primary" />
+
+                <Button android:id="@+id/btn_signup" style="@style/FlashShop.Button.Primary"
+                    android:layout_width="match_parent" android:layout_height="56dp"
+                    android:layout_marginTop="16dp" android:text="@string/signup_btn" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Footer -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/already_have_account" android:textColor="@color/on_surface_variant" android:textSize="14sp" />
+            <TextView android:id="@+id/tv_sign_in" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="4dp" android:text="@string/sign_in"
+                android:textColor="@color/primary" android:textSize="16sp" android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
