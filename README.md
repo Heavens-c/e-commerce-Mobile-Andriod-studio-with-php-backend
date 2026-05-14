@@ -62,7 +62,7 @@ Example files: `login.php`, `get_products.php`, `admin_orders.php`, etc.
 
 ### 3. Android Studio
 
-1. **File → Open** the repo root **`andriod app`** (the folder that contains `app/` and `settings.gradle` / Gradle wrapper — not only the inner `app` module if your IDE expects the project root).
+1. **File → Open** the repo root **`android app`** (the folder that contains `app/` and `settings.gradle` / Gradle wrapper — not only the inner `app` module if your IDE expects the project root).
 2. Set **`app/build.gradle`** → `BASE_URL` to match your deployed API (same path suffix `/flashshop/api/` if you keep that convention):
 
 ```groovy
